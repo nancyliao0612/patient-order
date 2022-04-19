@@ -6,7 +6,6 @@ import {
   updatePatientOrder,
 } from "../controllers/orderController.js";
 
-// router.route("/").get(getSinglePatientOrder).post(createPatientOrder);
 router
   .route("/:id")
   .get(getSinglePatientOrder)

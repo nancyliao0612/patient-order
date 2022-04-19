@@ -29,15 +29,23 @@ section h1 {
   padding-bottom: 20px;
 }
 
+.loading-text {
+  text-align: center;
+  padding: 10px;
+}
+
 .order-section button {
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  background-color: var(--grey);
+  width: 50px;
 }
 
 .order-section {
   display: flex;
+  font-size: 14px;
 }
 
 .order-message {
@@ -48,25 +56,33 @@ section h1 {
   justify-content: space-between;
   background: var(--light-blue);
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .order-message > p {
   width: 300px;
   word-break: break-all;
   padding: 10px 5px;
-  font-size: 14px;
 }
 
 .order-message > button {
-  /* border: solid 1px; */
   border: none;
   padding: 5px 8px;
   margin-right: 5px;
   height: 100%;
+  background-color: var(--grey);
+  font-size: 14px;
+  width: 55px;
 }
 
 @media screen and (max-width: 576px) {
+  .order-section button {
+    width: 70px;
+  }
   .order-message {
     width: 100%;
+  }
+  .order-message > p {
+    width: 80%;
   }
 }

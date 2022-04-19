@@ -23,14 +23,10 @@ function OrderDialog({ handleDialog, OrderId, isDialogOpen, patientName }) {
       } = await axios.get(`/api/v1/orders/${OrderId}`);
       // for starter, there is no order message in the db, so for that case, just setMessage to null
       if (order) {
-        console.log(order);
-        // const allMessages = order.map((item) => item.Message);
-        // console.log(allMessages);
         setMessage(order);
       } else {
         setMessage(null);
       }
-      // order ? setMessage(allMessages) : setMessage(null);
       setLoading(false);
     } catch (error) {
       setLoading(false);
@@ -111,14 +107,8 @@ function OrderDialog({ handleDialog, OrderId, isDialogOpen, patientName }) {
               onChange={handleChange}
               name="order"
               value={order}
+              className="order-textarea"
             />
-            {/* {!message ? (
-              <button>新增</button>
-            ) : isEditing ? (
-              <button>更新</button>
-            ) : (
-              <button disabled>新增</button>
-            )} */}
             {!message ? (
               <button>新增</button>
             ) : isEditing ? (

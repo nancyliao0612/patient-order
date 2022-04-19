@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <p>Data is loading...</p>;
+    return <p className="loading-text">Data is loading...</p>;
   }
 
   const patients = patientList.map((item) => {
