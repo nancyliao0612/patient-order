@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --grey: #f3f1f5;
+  --black: #393e46;
+  --light-blue: #e3f6f59a;
+}
+
+body {
+  background: var(--grey);
+  font-family: "Noto Sans TC", sans-serif;
+  color: var(--black);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+section h1 {
+  padding-bottom: 20px;
+}
+
+.order-section button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-section {
+  display: flex;
+}
+
+.order-message {
+  margin: 15px 0;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--light-blue);
+  border-radius: 5px;
+}
+
+.order-message > p {
+  width: 300px;
+  word-break: break-all;
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+.order-message > button {
+  /* border: solid 1px; */
+  border: none;
+  padding: 5px 8px;
+  margin-right: 5px;
+  height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .order-message {
+    width: 100%;
+  }
+}
